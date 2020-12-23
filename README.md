@@ -1,6 +1,7 @@
-# webpack-plugin-fr-theme
 
-form-render支持antd自定义主题
+# 参考自 webpack-plugin-fr-theme
+
+对于旧有项目中, 引入form-render时, 对于CSS的修复
 
 ### 使用
 
@@ -31,9 +32,10 @@ const WebpackPluginFrTheme = require('webpack-plugin-fr-theme');
 }
 
 ````
-
+<!-- 
 ## 实现
 
 form-render对于antd的组件样式默认是引用css样式，如果项目中已经使用了antd自定义主题，这时候form-render引用的css文件会覆盖项目中的自定义样式。
 
 因为自定义样式是通过less注入全局的样式变量来实现的，所以通过webpack plugin手动修改form-render中antd引用的样式文件，将style/css替换成style/index，去引用antd对应组件的less文件。
+ -->

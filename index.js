@@ -12,7 +12,7 @@ class FormRenderThemePlugin {
   apply(compiler) {
     compiler.hooks.afterEnvironment.tap('FormRenderThemePlugin', () => {
       const ROOT_PATH = path.resolve(process.cwd());
-      const FORM_RENDER_ANTD_PATH = path.resolve(ROOT_PATH, './node_modules/form-render/lib/widgets/antd');
+      const FORM_RENDER_ANTD_PATH = path.resolve(ROOT_PATH, './node_modules/form-render/lib/widgets/fusion/color');
       const fileList = getThemeFileList(FORM_RENDER_ANTD_PATH);
 
       ASTParser(fileList);
